@@ -74,7 +74,7 @@ export const personalInfo: PersonalInfo = {
   location: "Nashik, Maharashtra, India",
   github: "https://github.com/Rutujak004",
   linkedin: "https://www.linkedin.com/in/rutujamskadam/",
-  cvUrl: "/Rutuja_Kadam_CV.pdf",
+  cvUrl: "/Rutuja_Kadam_CV1.pdf",
   bio: "I'm a Rutuja Kadam ,a Computer Science Student (BE, 2022-2026) with dedication in full stack development and AI/ML. ",
   bio2: "During my internship at SPARD Technologies, I got the opportunity to work on real-world projects and develop my skills in full-stack development. Where I implementing authentication, real-time chat with WebSockets, REST APIs.",
   photoUrl: "/photo1.jpg",
