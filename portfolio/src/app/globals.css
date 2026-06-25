@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-navy-950 text-navy-200;
+  }
+
+  /* Custom scrollbar styles */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-navy-800;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-navy-600 rounded;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-accent;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-navy-800 border border-navy-700 rounded-2xl p-6 hover:border-accent/50 transition-all duration-300 hover:shadow-lg hover:shadow-accent/5;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center gap-2 bg-accent hover:bg-accent-dark text-white font-medium px-6 py-3 rounded-xl transition-all duration-200 hover:scale-105 active:scale-95;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center gap-2 border border-navy-600 hover:border-accent text-navy-300 hover:text-accent font-medium px-6 py-3 rounded-xl transition-all duration-200;
+  }
+
+  .tag {
+    @apply text-xs font-mono px-3 py-1 rounded-full bg-navy-700 text-navy-300 border border-navy-600;
+  }
+
+  .tag-accent {
+    @apply text-xs font-mono px-3 py-1 rounded-full bg-accent/10 text-accent border border-accent/20;
+  }
+
+  .section-label {
+    @apply text-accent text-sm font-mono tracking-widest uppercase mb-3 block;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-white via-navy-200 to-accent bg-clip-text text-transparent;
+  }
+}
+
+@layer utilities {
+  .font-500 {
+    font-weight: 500;
+  }
+  .font-600 {
+    font-weight: 600;
+  }
+  .font-700 {
+    font-weight: 700;
+  }
+  .font-800 {
+    font-weight: 800;
+  }
+}
